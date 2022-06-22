@@ -10,16 +10,16 @@ Usage
 
 - Add below code in your app level "build.gradle" file.
 
-`
+
+```
 dependencies {
     implementation project(path: ':social_media_auth')
 }
-`
-
+```
 
 - Put below code in your "settings.gradle" file
 
-include ':social_media_auth'
+`include ':social_media_auth'`
 
 2. Google Authentication
 
