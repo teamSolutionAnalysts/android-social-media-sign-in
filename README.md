@@ -27,6 +27,7 @@ Now add below code for start google authentication.
 
 In your activity or fragment xml file add below code for google button either create your own custom button.
 
+```
 <com.google.android.gms.common.SignInButton
     android:id="@+id/sign_in_button"
     android:layout_width="wrap_content"
@@ -46,17 +47,23 @@ In your activity or fragment xml file add below code for google button either cr
   app:srcCompat="@drawable/ic_google" />
 
 </com.google.android.gms.common.SignInButton>
+```
+
 
 Put below code in your button click listener:
 
+```
 GoogleAuth.with(activity = this).launch { intent ->
     startForSignInResult.launch(intent)
 }
+```
+
 
 3. Handling results
 
 Handle authentication result
 
+```
 private val startForSignInResult =
 registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result: ActivityResult ->
 
@@ -74,26 +81,31 @@ try {
 }
 
 }
+```
+
 
 4. If we want to check if the user is already signed in or not then check using the below method.
 
+```
 if (GoogleAuth.with(this).isUserSignIn()) {
     // User is already sign in to the app.
 } else { 
     // User is not sign in
 }
+```
+
 
 5. Fetch user profile data after sign in or if the user is already signed in to the app.
 
-val account = GoogleAuth.with(activity = requireActivity()).getSignInAccountInfo()
+`val account = GoogleAuth.with(activity = requireActivity()).getSignInAccountInfo()`
 
 Get user data from the  "account" object and update the UI accordingly.
 
 6. If we want to logout and revoke the access of the user use below code.
 
-i.  GoogleAuth.with(this).logout()
+i.  `GoogleAuth.with(this).logout()`
 
-ii.  GoogleAuth.with(this).revokeAccess()
+ii. `GoogleAuth.with(this).revokeAccess()`
 
 All above codes are accessible in "fragment" and "activity". You have to pass the context accordingly.
 
@@ -119,13 +131,15 @@ Usage
 
 - Add below code in your app level "build.gradle" file.
 
+```
 dependencies {
     implementation project(path: ':social_media_auth')
 }
+```
 
 - Put below code in your "settings.gradle" file
 
-include ':social_media_auth'
+`include ':social_media_auth'`
 
 2. Facebook Authentication
 
@@ -133,6 +147,7 @@ Now add below code for start facebook authentication.
 
 In your activity or fragment xml file add below code for facebook button either create your own custom button.
 
+```
 <androidx.constraintlayout.widget.ConstraintLayout
  android:id="@+id/cl_facebook"
  android:layout_width="wrap_content"
@@ -171,9 +186,11 @@ In your activity or fragment xml file add below code for facebook button either 
  app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+```
 
 Put below code in your button click listener:
 
+```
 FacebookAuth.with(
  this, loginResultData, mutableListOf(
  "email",
@@ -185,11 +202,14 @@ FacebookAuth.with(
  "user_link"
 )
 ).launch()
+```
+
 
 3. Handling results
 
 Now create an observer to receive the success and failure result of sign in. Here you can easily check if the user is successfully signed in with the "isLogin" parameter. Also you get the "Access Token", "Granted and Denied Permission List", "Authentication Token"  and "Error Message".
 
+```
 private val loginResultData = MutableLiveData<FacebookLoginResult>()
 
 loginResultData.observe(this) {
@@ -201,21 +221,27 @@ loginResultData.observe(this) {
  }
 
 }
+```
+
 
 4. If we want to check if the user is already signed in or not then check using the below method.
 
+```
 if (FacebookAuth.with().isUserSignIn()) {
     // User is already sign in to the app.
 } else {
     // User is not sign in
 }
+```
+
 
 5. When you want to get a current access token put below code to get.
 
-val currentAccessToken = FacebookAuth.with().getCurrentAccessToken()
+`val currentAccessToken = FacebookAuth.with().getCurrentAccessToken()`
 
 6. If the user's access token is expired then you can get a new access token from the below method.
 
+```
 private val accessTokenResultData = MutableLiveData<AccessToken>()
 
 FacebookAuth.with().getUpdatedAccessToken(accessTokenResultData)
@@ -223,15 +249,17 @@ FacebookAuth.with().getUpdatedAccessToken(accessTokenResultData)
 accessTokenResultData.observe(this) { updatedTokenObject ->
   // Get new token from the "updatedTokenObject.token" and save in your accordingly.
 }
+```
 
 7. For logout add below code.
 
-FacebookAuth.with().logout()
+`FacebookAuth.with().logout()`
 
 8. Fetch user profile data after sign in or if the user is already signed in to the app.
 
 private val profileResultData = MutableLiveData<FacebookProfileResult>()
 
+```
 FacebookAuth.with().getProfileData(accessToken,"id,name,link", profileResultData)
 
 profileResultData.observe(this) { profileResponse ->
@@ -240,21 +268,26 @@ profileResultData.observe(this) { profileResponse ->
   val error = profileResponse.error
   // You have to check jsonobject and error code.
 }
+```
 
 9. Open your strings.xml file. Add your "facebook_app_id", "facebook_client_token" and "fb_login_protocol_scheme" in you string.xml file and put related code in "AndroidManifest.xml" file
 
 - strings.xml
 
+```
   <string name="facebook_app_id">598719211690552</string>
   <string name="fb_login_protocol_scheme">fb598719211690552</string>
   <string name="facebook_client_token">cf74a14496908cfb8990f7c33f488bff</string>
+```
+
 
 - AndroidManifest.xml
 
-<uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
+`<uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>`
 
 Add below code in between "<application>" tag
 
+```
 <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
 <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
 
@@ -268,6 +301,8 @@ Add below code in between "<application>" tag
      <data android:scheme="@string/fb_login_protocol_scheme" />
     </intent-filter>
 </activity>
+```
+
 
 All above codes are accessible in "fragment" and "activity". You have to pass the context accordingly.
 
