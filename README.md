@@ -10,9 +10,10 @@ Usage
 
 - Add below code in your app level "build.gradle" file.
 
-dependencies {
+`dependencies {
     implementation project(path: ':social_media_auth')
-}
+}`
+
 
 - Put below code in your "settings.gradle" file
 
