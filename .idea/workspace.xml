@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b6342d38-91b5-4497-bcc8-b3f204593a26" name="Changes" comment="- init commit">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/social-media-sign-in.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/src/androidTest/java/com/google_auth/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/src/main/java/com/google_auth/auth/FacebookAuthUtil.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/src/main/java/com/google_auth/auth/GoogleAuthUtil.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/src/main/java/com/google_auth/bean/FacebookLoginResult.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/src/main/java/com/google_auth/bean/FacebookProfileResult.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/social_media_auth/src/test/java/com/google_auth/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usage/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usage/facebook/FacebookAuthActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usage/facebook/activity_facebook_auth.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usage/google/GoogleAuthActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usage/google/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2AvyODPJ8JmmMm9JtnlNrJiDoxH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6342d38-91b5-4497-bcc8-b3f204593a26" name="Changes" comment="" />
+      <created>1655904318854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655904318854</updated>
+    </task>
+    <task id="LOCAL-00001" summary="- init commit">
+      <created>1655904347637</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655904347637</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="- init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="- init commit" />
+  </component>
+</project>

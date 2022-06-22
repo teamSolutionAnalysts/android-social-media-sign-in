@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Google Auth</string>
+    <string name="user_canceled_operation">Operation canceled by user.</string>
+
+</resources>
