@@ -43,7 +43,7 @@ open class FacebookAuth {
                     oldAccessToken: AccessToken?,
                     currentAccessToken: AccessToken?
                 ) {
-                    accessTokenResultData.value = currentAccessToken
+                    accessTokenResultData.postValue(currentAccessToken)
                     accessTokenTracker?.stopTracking()
                 }
             }
@@ -114,10 +114,6 @@ open class FacebookAuth {
                             result.recentlyDeniedPermissions
                         )
                         observerResult?.value = observerResult?.value
-                        Log.e(
-                            "OPOT",
-                            "OPOT = ${result.accessToken.token}"
-                        )
                     }
 
                     override fun onCancel() {
